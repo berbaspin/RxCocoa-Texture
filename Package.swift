@@ -12,11 +12,9 @@ let package = Package(
         .library(name: "RxCocoa-Texture", targets: ["RxCocoa-Texture"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift", from: 
-"6.0.0")
+        .package(url: "https://github.com/ReactiveX/RxSwift", from: "6.0.0")
     ],
     targets: [
-        .target(name: "RxCocoa-Texture", dependencies: ["RxSwift", 
-"RxCocoa"])
+        .target(name: "RxCocoa-Texture", dependencies: ["RxSwift", "RxCocoa"], path: "RxCocoa-Texture/Classes")
     ]
 )
